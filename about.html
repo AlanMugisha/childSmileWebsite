@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #000080;
+    font-family: Open Sans, Arial, Helvetica, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    font-size: 18px;
+}
+
+/* Style the header */
+.header {
+  background-color: #0000ff;
+  padding: 20px;
+  text-align: center;
+  color: #ffffff;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #800080;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #000080;
+  color: yellowgreen;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+  width: 25%;
+}
+
+/* Middle column */
+.column.middle {
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+
+ h2, h3, h4, b {
+  font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700;
+    background-color: #800080;
+    background: #800080;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 5px 5px 5px 10px;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    text-align: center;
+}
+
+img {
+  border-radius: 50%;
+}
+
+p {
+    text-align: justify;
+    font-size: 20px;
+    color: white;
+    padding: 2px 2px 2px 2px;
+}
+
+li {
+    color: white;
+    font-size: 25px;
+}
+a {
+  color: #008cba;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>CHILD SMILE FOUNDATION(CSF)</h1>
+</div>
+<h2>ABOUT</h2>
+
+<div class="topnav">
+  <a id="a" href="index.html">Home</a>
+            <a id="a" href="about.html"><span id="donate">About Us</span></a>
+            <a id="a" href="project.html">Projects</a>
+            <a id="a" href="events.html"><span id="donate">Events</span> </a> 
+            <a id="a" href="get involved.html">Get Involved </a> 
+            <a id="a" href="gallery.html"><span id="donate">Gallery</span> </a>
+            <a id="a" href="contact-us.html">Contact Us</a>
+            <a id="a" href="donate.html"><span id="donate">Donate</span></a>
+
+</div>
+
+<div class="row">
+  <div class="column side">
+    <h2>MISSION</h2>
+    <p>To aid vulnerable children by providing educational and material support, 
+      promote their self-worth and prepare them to overcome the challenges of life 
+      with confidence as successful and responsible law abiding citizens.
+</p>
+    <h3>MAIN OBJECTIVES</h3>
+    <p><strong>Combat Illiteracy :</strong> Spearhead a campaign against illiteracy by providing access to quality education and fostering talent development among children through various avenues such as music, drama, and sports.</p>
+    <p><strong>Individual Sponsorship:</strong>  Seek individual sponsors to support the education of the most vulnerable children, both within Uganda and beyond, ensuring they have access to the opportunities they need.</p>
+    <p><strong>Advocacy Centers :</strong>  Establish advocacy centers in local communities dedicated to championing the rights and welfare of vulnerable children, creating a supportive network for their development and protection.</p></p>
+    <h3>SUCCESS STORIES</h3>
+    <img src="public\images\pic76.jpg" alt="An image of a sea shore" style="float:top" width="100%" />
+    <h3 id="title">"I used to stay at home when my friends go to school because mummy could not pay my school fees...after getting a sponsor am so happy to be in school with my friends. Thanks to the Rainbow school in the Netherlands for supporting my education"</h3>
+        <p id="instructor"><span>Maria, Primary 2</span></p>
+    <h4>THE BOARD OF DIRECTORS</h4>
+    <img src="public\images\pic3.jpg" alt="An image of a sea shore" style="float:top" width="100%" />
+    <p>The board of directors supervises the work of the organization. The executive director who reports to the board at the board members meetings every month. This board plays an important role in the overall oversight of the organization to make sure everything
+       is running according to plans.</p>
+
+  </div>
+  
+  <div class="column middle">
+    <h2>ABOUT THE ORGANIZATION</h2>
+    <p>Child Smile Foundation is a community based 
+      organization intended to provide protection and safety to all children
+      especially the most defenseless in our communities by providing 
+      education, food and clothes to the most vulnerable. 
+      Our organization wishes to see that all the children in our 
+      communities receive care and love from parents, guardians and fellow 
+      socialites in the community.
+      An Asian proverb states:
+        If you're planning for a year sow seeds, if you're planning for ten years, plant trees but if 
+        you're planning for a hundred years, educate people.
+</p>
+    <p>Indeed when it comes to providing solutions that are long lasting, education is imperative 
+      because it develops a person's ability to make decisions that will improve his life.
+      One of the best gifts we can pass on to our children is to provide them with education as
+      a tool to fight ignorance and poverty in order to live in prosperous communities.
+      We believe that if children are educated, they will become better equipped to deal with the
+      problems of life. They can also gain moral strength needed to overcome harmful habits.
+</p>
+<img src="public\images\pic.jpg" alt="An image of a sea shore" style="float:top" width="100%" />
+<p>Child Smile Foundation is the right place for the education of the orphans and vulnerable. Our organization promotes the rights of children and encourages all stakeholders and partners to play their roles in supporting the children by promoting their rights to play, their rights to education, safety and protection, their rights to eating good food and access 
+  to clean water. Children also need enough rest and sleep to promote both their physical and mental growth among others.</p>
+  <h3>EDUCATION IS POWER</h3>
+  <img src="public\images\pic74.jpg" alt="An image of a sea shore" style="float:top" width="100%" />
+  <h3>A DEDICATED TEAM OF VOLUNTEERS</h3>
+  <p>Child smile Foundation is run by a dedicated team of volunteers who are willing to accomplish their work with dedication and resilience in order to reach the main objectives of the organization. This team enjoys a vast experience in the management of the organization with all humility, transparency and a great spirit of team work which helps the team 
+     to accomplish lots of good things for the children. This tam work has resulted in accomplishing lots of progress in the field of education and moral and protection of children under our care. The team is ready to support any child at any time and makes sure all children under our care enjoy their rights and accept their obligations as well for a good
+     functionality of our organization.</p>
+  <h3>CHILDREN ARE THE FUTURE GENERATION</h3>
+  <p>Poverty alleviation strategies is the way to go if we want to reduce 
+    poverty and live into prosperous communities now and in the future. The children 
+    need attention especially during these last days when they have become victimes 
+    to many predators who can easily destroy their lives without compassion.</p>
+  <p>Child Smile Foundation is doing everything in its reach to give all necessary 
+    support to vulnerable children and orphans in our communities to ensure every 
+    child has access to education, support also those elderly persons who are giving 
+    support to their grand children. We have done this for many years and now we are 
+    very happy to see that many vulnerable children and orphans have access to basic 
+    education which opens up all other opportunities for success in the future.</p>
+  <p>Would you like to live in the world where children and young people are valued 
+    and properly care for? This would pave way to a new generation of people who care 
+    for each other and for their loved ones. This is all about life as God intended it 
+    to be. </p>
+  </div>
+  
+  
+  <div class="column side">
+    <h2>VISION</h2>
+    <p>To build strong communities by empowering children with education as a tool to improve on their lives through provision of knowledge and development of practical skills that enable them to achieve self-admiration, self-reliance and become confident successful champions in their communities</p>
+    <h3>GOAL</h3>
+    <p>To build our capacity to increase and support as many vulnerable children as possible by creating
+      a conducive environment for them to receive education and providing them with other necessities
+       so as to enjoy life as dignified human beings.</p>
+    <h3>VALUES</h3>
+    <ul style="font-size: 20px;">
+      <li> Passion </li>
+      <li> Love</li>
+      <li> Consistency </li>
+      <li> Integrity </li>
+      <li> Team Work </li>
+      <li> Achievement </li>
+      <h3>SUCCESS STORIES</h3>
+    <img src="public\images\pic75.jpg" alt="An image of a sea shore" style="float:top" width="100%" />
+    <h3 id="title">"I used to stay at home when my friends go to school because mummy could not pay my school fees...after getting a sponsor am so happy to be in school with my friends. Thanks to the Rainbow school in the Netherlands for supporting my education"</h3>
+        <p id="instructor"><span>Maria, Primary 2</span></p>
+    <h4>THE MANAGEMENT COMMITTEE</h4>
+    <p>The management committee is composed of diffrent magagers and heads of departments at different levels. The heads of these committees report directly to the executive director. The management committee is in charge of the daily activities of the organization
+       at different levels.</p>
+    <h4>SUPPORT A CHILD TODAY</h4>
+    <p>At Mercy Nursery and Primary School Lweza, there are many children who need your 
+      support for them to continue their education that is at risk of being interapted at 
+      any moment from now because of lack of support. Please sopport one child today.</p>
+  </ul>
+  </div>
+</div>
+<h4 style="font-size: 20px"> <i>OUR ADDRESS</i></h4>
+    </main>
+    <hr class="bottom-line"> 
+     <footer>
+        <p> Child Smile Foundation (CSF) REG.N0.WCBO/32/2712 N0.3212 Physical Address Lweza A LC1.  P.O.Box: 23176 Kampala, Uganda East Africa Tel +256 701 910352 /+256 783 129168  Email: childsmileug@gmail.com
+            <br>© Copyright Child Smile Foundation 2024 | All rights Reserved
+        </p>
+        <p><a href="https://www.childsmilefoundation.org/">Visit our website</a></p>
+        
+    </footer>
+  
+</body>
+</html>

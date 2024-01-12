@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #000080;
+    font-family: Open Sans, Arial, Helvetica, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    font-size: 18px;
+}
+
+/* Style the header */
+.header {
+  background-color: #0000ff;
+  padding: 20px;
+  text-align: center;
+  color: #ffffff;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #800080;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #000080;
+  color: yellowgreen;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+  width: 25%;
+}
+
+/* Middle column */
+.column.middle {
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+
+ h2, h3, h4, b {
+  font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700;
+    background-color: #800080;
+    background: #800080;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 5px 5px 5px 10px;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    text-align: left;
+}
+
+p {
+    text-align: justify;
+    font-size: 20px;
+    color: white;
+    padding: 2px 2px 2px 2px;
+}
+a {
+  color: #008cba;
+}
+
+li {
+    color: white;
+    font-size: 25px;
+}
+figcaption {
+    color: aqua;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>CHILD SMILE FOUNDATION(CSF)</h1>
+</div>
+<h2>GET INVOLVED</h2>
+
+<div class="topnav">
+  <a id="a" href="index.html">Home</a>
+            <a id="a" href="about.html"><span id="donate">About Us</span></a>
+            <a id="a" href="project.html">Projects</a>
+            <a id="a" href="events.html"><span id="donate">Events</span> </a> 
+            <a id="a" href="get involved.html">Get Involved </a> 
+            <a id="a" href="gallery.html"><span id="donate">Gallery</span> </a>
+            <a id="a" href="contact-us.html">Contact Us</a>
+            <a id="a" href="donate.html"><span id="donate">Donate</span></a>
+
+</div>
+
+<div class="row">
+  <div class="column side">
+    <h2>BECOME A MEMBER</h2>
+    <p>Children at Mercy Primary School are talented in crafts, making bids, 
+        paper envelops and many more. They are doing all they can to develop their talents in various aspects 
+        of art crafts and many more. These children are also talented in playing football both the boys and girls alike. 
+        We are doing all we can to help them develop their talents because in turn, such talents may result 
+        in career for some and help them support themselves and their dependants.</p>
+    <h3>BECOME A VOLUNTEER</h3>
+    <p>We are encouraging all those who can spare some of their precious time to volunteer 
+        at Child Smile Foundation, we need people who can help us organize our files in the 
+        office, work regularly to update our website, teach English, Mathematic or Science. 
+        These subjects are very important for the future of the children. 
+        We also need some people who can teach them hands on skills such as carpentry, 
+        tailoring, hair cutting, braiding hair, lessons about hygiene especially for the 
+        child girl and many other things that can benefit all these children in the future.</p>
+    <p>Many retired professional men and women are out there who can use their present 
+        circumstances to pass on their talents to this new generation. We cannot afford to 
+        let these professionals just die and disappear with all the great wealth of knowledge 
+        they have acquired over the years. It is vital if they can pass on such skills 
+        and knowledge to others especially those who could never attain such honor by 
+        themselves. By so doing we keep these professionals alive and many will continue 
+        to benefit from them even when the owners had passed away</p>
+    <img src="public\images\pic24.jpg" alt="An image of computer man" style="float: top;" width="100%" />
+<p style="font-size: 20px;"> The knowledge of computer is inevitable in this era. children need to learn
+     computer lessons if they are to be successful in this world. Everything has turned digital from business 
+     to education, and social life is more digital than ever before. Therefore here at Mercy Primary School,
+      we are doing our best to introduce our learners to this very important aspect of education. 
+      many of them may not even afford to learn more except through the provision of online kind of 
+      education which is growing every day in the current society.</p>
+    <h3>BECOME A FUNDRAISER</h3>
+    <p>You can fundraise for one of our projects like building a classroom, painting a classroom, 
+        you can even fundraise to pay one of our teachers at Mercy Nursery and Primary School. 
+        As a project that supports orphans and vulnerable children, we use the principle of 
+        equalizing, where one child can pay school fees and it supports another child whose 
+        parents are unable to pay school fees for their children. For this reason, 
+        we try our best to make sure that we raise funds to pay teachers so that those 
+        who cannot afford to pay school fees can also benefit in the program.
+        You can also fundraise for a meal for a learner or a group of learners because 
+        many learners spend the whole day at school without a meal, learning on an empty 
+        stomach is a very difficult endeavor. It is our humble request to all our friends, 
+        and most especially friends of children around the world to support our project.</p>
+    <h4>BECOME A SPONSOR</h4>
+    <p>
+    Our organization is appealing to all good Samaritans out there to support vulnerable children in their academic journey. Currently CSF is providing education to more than 500 children with evident need for support. Help one and make a difference. You can help one child or a group of children. 
+    </p>
+    <p>If you wish to sponsor a child at Mercy Nursery and Primary School, please do not hesitate to contact us by filling in the contact us form to express your willingness to sponsor a child or a group of children to receive education. We will be very glad to provide you with all necessary information
+        on how you can start sponsoring a child or a group of children today!</p>
+
+
+  </div>
+  
+  <div class="column middle">
+    <h2>WAYS IN WHICH YOU CAN BE INVOLVED</h2>
+    <p>There are many ways in which you can be involved in supporting orphans and vulnerable children in Ugands in general, and here in Wakiso District in particular.
+        Some of the most practical ways you can support orphans and vulnerable children include:
+        <ul>
+         <li>Pray for an Orphan</li>
+         <li>Send a flower of love to Orphans</li>
+         <li>Share their Stories with your frinds and relatives</li>
+         <li>Become a Host Family</li>
+         <li>Help Families Stay Together</li>
+         <li>Give Your Financial Support</li>
+         <li>Sponsor the Education of an Oprhan or Orphans</li>
+         <li>Consider Foster Care</li>
+         <li>You can give them gifts</li>
+         <li>If you are a parent and have children, take great care of your family.</li>
+        </ul>
+     </p>
+ 
+        <img src="public\images\pic6.jpg" alt="An image of the sea shore" style="float: top;" width="100%" />
+  <h3>GROUP SPONSORSHIP PROJECT</h3>
+  <p>Group Sponsorship project is a group fundraising project where members subscribe to donating 5EUROS each month to support the education of the most vulnerable children in our school community. Whenever we collect funds enough to education one child at least for one year, we assess the needs of the
+    most needy and allocate the funds to one child after selection. We will keep updating the members of the group Sponsorship about the outcome and identity of the child selected so that members who donated the funds know how the raised funds are being utilized to support vulnerable children in our school.
+    To make this aspect of our project successful, members are urged to invite their friends to be part of this noble cause. By supporting this initiative, we shall support many more vulnerable children and orphans to access education, an element crucial in any child's life to be prepared for a successful life in the future.</p>
+    <br>
+
+  <img src="public\images\pic74.jpg" alt="An image of a sea shore" style="float:top" width="100%" />
+  <P style="font-size: 20PX;"> These Children need your help to receive basic education. They need a bright future.
+    Once educated, they will fight poverty through knowledge and hard work. Any donation can make a difference
+    and cause a change! This program helps individual children to get individual sponsors to support their education.
+    The sponsor receives updates from the child, typically including photos and translated letters, which help create the feeling of a personal relationship with the child.
+    The sponsorship amount covers all the needs of the sponsored child including, school fees, a set of uniform with sports wear, and sweaters.
+    Our organization is appealing to all the good Samaritans out there to support vulnerable children and orphans in their academic journey. Currently CSF is providing education to more than 500 children with evident need for support. Help one and make a difference!!
+    To support one child or a group of children, please fill out our Contact us Form and submit  it to us for processing and information sharing for you to start supporting some of our needy children to receive education at school.
+
+</P>
+
+  <h3>YOUR SKILLS CAN MAKE A DIFFERENCE</h3>
+  <p>In order to provide good education to children and especially vulnerable children and orphans, emphasis must be made on the teachers because they play a significant role in helping children to reach their academic goals. Theachers need training time after time.
+    We have developed a strategic plan to empoere our teaching staff members so that they get well equiped to handle the children in ways that benefit learners to reach their goals by providing trainin to teachers and also avail material resources to enhance thei ability to perform well.
+ </p>
+ <img src="public\images\pic13.jpg" alt="Teacher Justine preparing her lesson" style="float: top;" width="100%" />
+ 
+  </div>
+  
+  
+  <div class="column side">
+    <h2>SPONSOR A CHILD TODAY</h2>
+    <img src="public\images\pic59.jpg" alt="An image of a sea shore" style="float:top" width="100%" />
+    <p style="font-size: 20px;"> <em> The mission of Child Smile Foundation is to 
+        support vulnerable children by providing educational and material support, 
+        promote their self-worth and prepare them to overcome the challenges of life 
+        with confidence as successful and responsible law abiding citizens</em>.</p>
+
+    <h3>PARTNER WITH US</h3>
+    <img src="public\images\pic23.jpg" alt="An image of a sea shore" style="float:top" width="100%" />
+    <figcaption
+    id="img-caption"><strong>Ingela Chai</strong> <strong>is one of our partners in the Netherlands.</strong></figcaption>
+</figcaption>
+
+    <p>To build our capacity to increase and support as many vulnerable children as possible by creating
+      a conducive environment for them to receive education and providing them with other necessities
+       so as to enjoy life as dignified human beings.</p>
+    <h3>SPONSORSHIP PACKAGES</h3>
+    <ul style="font-size: 20px;">
+      <li> 5$/MONTH</li>
+      <li> 10$/MONTH</li>
+      <li> 15$/MONTH</li>
+      <li> 20$/MONTH</li>
+      <li> 25$/MONTH</li>
+      <li> 30$/MONTH</li>
+      <h3>HELP US PLASTER A CLASSROOM</h3>
+      <img src="public\images\pic6.jpg" alt="An image of a sea shore" style="float:top" width="100%" />
+      <figcaption
+    id="img-caption"><strong>Happy Primary 3 Children</strong> <strong>Shortly after receiving their T/shirts from our partners in the Netherlands.</strong></figcaption>
+</figcaption>
+
+        <h4>SPONSORSHIP PACKAGES</h4>
+        <img src="public\images\pic86.jpg" alt="An image of a sea shore" style="float:top" width="100%" />
+    <p>The management committee is composed of diffrent magagers and heads of departments at different levels. The heads of these committees report directly to the executive director. The management committee is in charge of the daily activities of the organization
+       at different levels.</p>
+    <h4>INVITE YOUR FRINED TO SUPPORT US</h4>
+    <img src="public\images\pic.jpg" alt="An image of a sea shore" style="float:top" width="100%" />
+  </ul>
+  </div>
+</div>
+<h4 style="font-size: 20px"> <i>OUR ADDRESS</i></h4>
+    </main>
+    <hr class="bottom-line"> 
+     <footer>
+        <p> Child Smile Foundation (CSF) REG.N0.WCBO/32/2712 N0.3212 Physical Address Lweza A LC1.  P.O.Box: 23176 Kampala, Uganda East Africa Tel +256 701 910352 /+256 783 129168  Email: childsmileug@gmail.com
+            <br>© Copyright Child Smile Foundation 2024 | All rights Reserved
+        </p>
+        <p><a href="https://www.childsmilefoundation.org/">Visit our website</a></p>
+        
+    </footer>
+  
+</body>
+</html>
+    
+
+
+    

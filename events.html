@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #000080;
+    font-family: Open Sans, Arial, Helvetica, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    font-size: 18px;
+}
+
+/* Style the header */
+.header {
+  background-color: #0000ff;
+  padding: 20px;
+  text-align: center;
+  color: #ffffff;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #800080;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #000080;
+  color: yellowgreen;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+  width: 25%;
+}
+
+/* Middle column */
+.column.middle {
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+
+ h2, h3, h4, b {
+  font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700;
+    background-color: #800080;
+    background: #800080;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 5px 5px 5px 10px;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+    font-size: 20px;
+    color: white;
+    padding: 2px 2px 2px 2px;
+}
+a {
+  color: #008cba;
+}
+
+li {
+    color: white;
+    font-size: 25px;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>CHILD SMILE FOUNDATION(CSF)</h1>
+</div>
+<h2>EVENTS</h2>
+
+<div class="topnav">
+  <a id="a" href="index.html">Home</a>
+            <a id="a" href="about.html"><span id="donate">About Us</span></a>
+            <a id="a" href="project.html">Projects</a>
+            <a id="a" href="events.html"><span id="donate">Events</span> </a> 
+            <a id="a" href="get involved.html">Get Involved </a> 
+            <a id="a" href="gallery.html"><span id="donate">Gallery</span> </a>
+            <a id="a" href="contact-us.html">Contact Us</a>
+            <a id="a" href="donate.html"><span id="donate">Donate</span></a>
+
+</div>
+
+<div class="row">
+  <div class="column side">
+    <h2>PLE RESULTS</h2>
+    <img src="public\images\pic16.jpg" alt="An image of class" style="float: top;" width="100%" " />
+    <p>Children at Mercy Primary School are talented in crafts, making bids, 
+        paper envelops and many more. They are doing all they can to develop their talents in various aspects 
+        of art crafts and many more. These children are also talented in playing football both the boys and girls alike. 
+        We are doing all we can to help them develop their talents because in turn, such talents may result 
+        in career for some and help them support themselves and their dependants.</p>
+    <h3>CARRIEN VISIT</h3>
+    <img src="public\images\pic27.jpg" alt="An image of computer man" style="float: top;" width="100%" />
+    <p>
+</p>
+
+    <h3>STUDY TOUR</h3>
+    <p>Music is an important part of human life. the children at MPS are talented in music. They can do well if they are given an opportunity to learn, they can appreciate and benefit from their own talents if they are given a chance to develop them.</p>
+    <img src="public\images\pic73.jpg" alt="An image of a sea shore" style="float:top" width="100%" />
+    <p>Music can restore hope, confidence and life especially for those who are vulnerable and somehow left out by the current society. Though music one can realize his potential in life and discover many opportunities in life and support others and guide others too.</p>
+    <h4>VISIT OF WG CONSULTANT</h4>
+    <p>The team was received at Mercy Nursery and Primary School on Wednesday, March 1, 2023 at the 
+      school premises. The team was led by Mr. WASWA FRANCIS, a consultant from Kyambogo Univesity.
+      This visit was very important because it focused on the community participation in the project.
+</p>
+    <p>The board of directors supervises the work of the organization. The executive director who reports to the board at the board members meetings every month. This board plays an important role in the overall oversight of the organization to make sure everything
+       is running according to plans.</p>
+       <h4>VISIT OF ASTI AT MPS</h4>
+       <p>On 27/10/2023 at 11:00am at Mariotte Hotel in Entebbe, a team from MPS welcomed Miss Asti and her friend Miranda and drove them to our school in Lweza to visit the project and see the learners as well as the staff. It was a very lovely day to welcome both ladies.</p>
+       <img src="public\images\pic92.jpg" alt="An image of computer man" style="float: top;" width="100%" />
+
+  </div>
+  
+  <div class="column middle">
+    <h2>NATIONAL EXAMS RELEASED</h2>
+    <p>The results for the primary leaving examinations are released by the Uganda National Examination 
+      board. This national event was cheered countrywide. How did Mercy Nursery and Primary School 
+      perform? All our 8 candidates were successful. This is the first time to present candidates
+      to the Uganda National Examination Board and surprisingly all our 8 candidates passed their
+      exams successful.
+      PRIMARY LEAVING EXAMINATIONS RESULTS 2023
+      We are proudly happy to announce that all the 8 candidates presented to the national examinations 
+      for the end of their primary education passed with flying colors. 
+      Congratulations our dear candidates. Congratulations our dear staff and parents for the great 
+      support to your sons and daughters. We are forever grateful for the great work well done
+</p>
+        <img src="public\images\pic6.jpg" alt="An image of the sea shore" style="float: top;" width="100%" />
+<p>Child Smile Foundation is the right place for the education of the orphans and vulnerable. Our organization promotes the rights of children and encourages all stakeholders and partners to play their roles in supporting the children by promoting their rights to play, their rights to education, safety and protection, their rights to eating good food and access 
+  to clean water. Children also need enough rest and sleep to promote both their physical and mental growth among others.</p>
+  <h3>LINKING AND LEARNING WORKSHOP</h3>
+  <p>
+    Officials from Child Smile Foundation attended the two days workshop organized 
+    by WildeGanzen Foundation in connection with NGO Forum and Change the Game Academy
+    The linking and Learning workshop took two working day. The focus was made on issues
+    relating linking and networking. Sharing experiences and challenges, linking 
+    with other organizations about succeesses and challenges.
+</p>
+<p>The workshop
+  was successful. The two days went quickly as if one day.The purpose of the 
+  workshop was among others, to strengthen the building capacity of local
+  organizations to deliver services to the local community with a particular 
+  emphasis on local community participation. 
+  Many organizations attended the workshop from many parts of the country.
+</p>
+
+  <img src="public\images\pic21.jpg" alt="An image of a sea shore" style="float:top" width="100%" />
+
+  <h3>WHY INVEST IN EDUCATION OF OUR CHILDREN</h3>
+  <p>Educating children is as old as the time when the first child was born in the world. 
+    Parents have the responsibility to educate their children in matters regarding morals, 
+    religion, reading and writing and also some trade. Basically this was done well because children 
+    could easily learn from their parents as they see them together, spending quality time together. 
+    This generation is very different because of lack of employment and many times parents get 
+    employment very far away from home, leaving children with their mothers and some times alone 
+    to care for their fellow children.
+
+ </p>
+ <p>
+  Parent are doing well to make sure that their children receive 
+  basic education that allows them to prepare for their future life, a time when no child is living 
+  with his parents and when the child becomes responsible for himself and those he cares for. The Way
+  parents view education matters for the future of their children. Child Smile Foundation is the voice
+  calling on everyone to take responsibility to educate children. Once educated, they can live to be
+  thankful to their parents.
+</p>
+
+ <img src="public\images\pic84.jpg" alt="Teacher Justine preparing her lesson" style="float: top;" width="100%" />
+ 
+  </div>
+  
+  
+  <div class="column side">
+    <h2>COMPASSION NEWS LETTER</h2>
+    <img src="public\images\pic90.jpg" alt="An image of a sea shore" style="float:top" width="100%" />
+    <p>To build strong communities by empowering children with education as a tool to improve on their lives through provision of knowledge and development of practical skills that enable them to achieve self-admiration, self-reliance and become confident successful champions in their communities</p>
+    <h3>FUNDRAISING</h3>
+    <img src="public\images/fundraising.avif" alt="An image of a sea shore" style="float:top" width="100%" />
+    <p>To build our capacity to increase and support as many vulnerable children as possible by creating
+      a conducive environment for them to receive education and providing them with other necessities
+       so as to enjoy life as dignified human beings.</p>
+    <h3>VOLUNTEERS</h3>
+    <img src="public\images\pic24.jpg" alt="An image of a sea shore" style="float:top" width="100%" />
+    <ul style="font-size: 20px;">
+      <li> Passion </li>
+      <li> Love</li>
+      <li> Consistency </li>
+      <li> Integrity </li>
+      <li> Team Work </li>
+      <li> Achievement </li>
+      <h3>GRADUATION</h3>
+      <img src="public\gallery/IMG-20231107-WA0021.jpg" alt="An image of a sea shore" style="float:top" width="100%" />
+        <h4>CURRENT NEWS</h4>
+    <p>The management committee is composed of diffrent magagers and heads of departments at different levels. The heads of these committees report directly to the executive director. The management committee is in charge of the daily activities of the organization
+       at different levels.</p>
+    <h4>FUNDRAISING PROGRAM</h4>
+    <img src="public\images\pic.jpg" alt="An image of a sea shore" style="float:top" width="100%" />
+  </ul>
+  </div>
+</div>
+<h4 style="font-size: 20px"> <i>OUR ADDRESS</i></h4>
+    </main>
+    <hr class="bottom-line"> 
+     <footer>
+        <p> Child Smile Foundation (CSF) REG.N0.WCBO/32/2712 N0.3212 Physical Address Lweza A LC1.  P.O.Box: 23176 Kampala, Uganda East Africa Tel +256 701 910352 /+256 783 129168  Email: childsmileug@gmail.com
+            <br>© Copyright Child Smile Foundation 2024 | All rights Reserved
+        </p>
+        <p><a href="https://www.childsmilefoundation.org/">Visit our website</a></p>
+        
+    </footer>
+  
+</body>
+</html>

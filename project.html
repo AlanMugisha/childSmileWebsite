@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #000080;
+    font-family: Open Sans, Arial, Helvetica, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    font-size: 18px;
+}
+
+/* Style the header */
+.header {
+  background-color: #0000ff;
+  padding: 20px;
+  text-align: center;
+  color: #ffffff;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #800080;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #000080;
+  color: yellowgreen;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+  width: 25%;
+}
+
+/* Middle column */
+.column.middle {
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+
+ h2, h3, h4, b {
+  font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700;
+    background-color: #800080;
+    background: #800080;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 5px 5px 5px 10px;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+    font-size: 20px;
+    color: white;
+    padding: 2px 2px 2px 2px;
+}
+a {
+  color: #008cba;
+}
+
+li {
+    color: white;
+    font-size: 25px;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>CHILD SMILE FOUNDATION(CSF)</h1>
+</div>
+<h2>PROJECTS</h2>
+
+<div class="topnav">
+  <a id="a" href="index.html">Home</a>
+            <a id="a" href="about.html"><span id="donate">About Us</span></a>
+            <a id="a" href="project.html">Projects</a>
+            <a id="a" href="events.html"><span id="donate">Events</span> </a> 
+            <a id="a" href="get involved.html">Get Involved </a> 
+            <a id="a" href="gallery.html"><span id="donate">Gallery</span> </a>
+            <a id="a" href="contact-us.html">Contact Us</a>
+            <a id="a" href="donate.html"><span id="donate">Donate</span></a>
+
+</div>
+
+<div class="row">
+  <div class="column side">
+    <h2>CRAFTS</h2>
+    <img src="public\images\pic82.jpg" alt="An image of class" style="float: top;" width="100%" " />
+    <p>Children at Mercy Primary School are talented in crafts, making bids, 
+        paper envelops and many more. They are doing all they can to develop their talents in various aspects 
+        of art crafts and many
+    <img src="public\images\ more. These children are also talented in playing football both the boys and girls alike. 
+        We are doing all we can to help them develop their talents because in turn, such talents may result 
+        in career for some and help them support themselves and their dependants.</p>
+    <h3>COMPUTER LITERACY</h3>pic18.jpg" alt="An image of computer man" style="float: top;" width="100%" />
+<p style="font-size: 20px;"> The knowledge of computer is inevitable in this era. children need to learn
+     computer lessons if they are to be successful in this world. Everything has turned digital from business 
+     to education, and social life is more digital than ever before. Therefore here at Mercy Primary School,
+      we are doing our best to introduce our learners to this very important aspect of education. 
+      many of them may not even afford to learn more except through the provision of online kind of 
+      education which is growing every day in the current society.</p>
+    <h3>MUSIC AND DRAMA</h3>
+    <p>Music is an important part of human life. the children at MPS are talented in music. They can do well if they are given an opportunity to learn, they can appreciate and benefit from their own talents if they are given a chance to develop them.</p>
+    <img src="public\images\pic85.jpg" alt="An image of a sea shore" style="float:top" width="100%" />
+    <p>Music can restore hope, confidence and life especially for those who are vulnerable and somehow left out by the current society. Through music, one can realize his potential in life and discover many opportunities in life, support and guide others too.</p>
+    <h4>TAILORING AND KNITTING</h4>
+    <img src="public\images\pic86.jpg" alt="An image of a sea shore" style="float:top" width="100%" />
+    <p>Learning a skill is helpful for the young learners. This can shape their career in the future. It is very important to set up programs besides the normal class lessons for them to learn and practice a skill for their survival. No one knows for sure how this can turn out to be.</p>
+    <p>Life experience shows that children who learned a skill while in school can do better while adult than those who only focused on normal classroom lessons. We are determined to equip our learners with life saving skills while learning. This time is very crucial for these young learners.</p>
+    <p>The availability of many online courses is a great opportunity for many young persons to learn a skill that can turn out to be a life changing experience in life. We encourage all young boys and girls to learn a skill that will help support themselves to be successful in life. It's all about courage and determination to succeed.</p>
+
+  </div>
+  
+  <div class="column middle">
+    <h2>CONSTRUCTION OF CLASSROOMS</h2>
+    <p style="font-size: 20px;"> The construction of classrooms are undergoing at the organiztion's educational 
+        center at Lweza Mercy Nursery and Primary School site. Since the number of learners is increasing it is a matter 
+        of urgency to construct classrooms to improve on the learning environment of our young learners. In order for 
+        the children at MPS to learn properly, the school needs classrooms as well as furniture to use such as desks, 
+        tables, capboards, and trained teachers. The school is currently running 9 class rooms, 3 classes for nursery 
+        section and 7 classes for primary section. However, there is a great need for classrooms where children need to 
+        receive education in good environment.</p>
+        <img src="public\images\pic6.jpg" alt="An image of the sea shore" style="float: top;" width="100%" />
+<p>Child Smile Foundation is the right place for the education of the orphans and vulnerable. Our organization promotes the rights of children and encourages all stakeholders and partners to play their roles in supporting the children by promoting their rights to play, their rights to education, safety and protection, their rights to eating good food and access 
+  to clean water. Children also need enough rest and sleep to promote both their physical and mental growth among others.</p>
+  <h3>CHILD SPONSORSHIP PROGRAM</h3>
+  <img src="public\images\pic74.jpg" alt="An image of a sea shore" style="float:top" width="100%" />
+  <P style="font-size: 20PX;"> These Children need your help to receive basic education. They need a bright future.
+    Once educated, they will fight poverty through knowledge and hard work. Any donation can make a difference
+    and cause a change! This program helps individual children to get individual sponsors to support their education.
+    The sponsor receives updates from the child, typically including photos and translated letters, which help create the feeling of a personal relationship with the child.
+    The sponsorship amount covers all the needs of the sponsored child including, school fees, a set of uniform with sports wear, and sweaters.
+    Our organization is appealing to all the good Samaritans out there to support vulnerable children and orphans in their academic journey. Currently CSF is providing education to more than 500 children with evident need for support. Help one and make a difference!!
+    To support one child or a group of children, please fill out our Contact us Form and submit  it to us for processing and information sharing for you to start supporting some of our needy children to receive education at school.
+
+</P>
+
+  <h3>TEACHER'S TRAINING PROGRAM</h3>
+  <p>In order to provide good education to children and especially vulnerable children and orphans, emphasis must be made on the teachers because they play a significant role in helping children to reach their academic goals. Theachers need training time after time.
+    We have developed a strategic plan to empoere our teaching staff members so that they get well equiped to handle the children in ways that benefit learners to reach their goals by providing trainin to teachers and also avail material resources to enhance thei ability to perform well.
+ </p>
+ <img src="public\images\pic13.jpg" alt="Teacher Justine preparing her lesson" style="float: top;" width="100%" />
+ 
+  </div>
+  
+  
+  <div class="column side">
+    <h2>GARDENING</h2>
+    <img src="public\images\pic80.jpg" alt="An image of a sea shore" style="float:top" width="100%" />
+    <p>To build strong communities by empowering children with education as a tool to improve on their lives through provision of knowledge and development of practical skills that enable them to achieve self-admiration, self-reliance and become confident successful champions in their communities</p>
+    <h3>SCHOOL LIBRARY</h3>
+    <img src="public\images\pic77.jpg" alt="An image of a sea shore" style="float:top" width="100%" />
+    <p>To build our capacity to increase and support as many vulnerable children as possible by creating
+      a conducive environment for them to receive education and providing them with other necessities
+       so as to enjoy life as dignified human beings.</p>
+    <h3>SCHOOL BUS</h3>
+    <img src="public\images\pic79.jpg" alt="An image of a sea shore" style="float:top" width="100%" />
+    <ul style="font-size: 20px;">
+      <li> Passion </li>
+      <li> Love</li>
+      <li> Consistency </li>
+      <li> Integrity </li>
+      <li> Team Work </li>
+      <li> Achievement </li>
+      <h3>POULTRY</h3>
+      <img src="public\images\pic91.jpg" alt="An image of a sea shore" style="float:top" width="100%" />
+        <h4>FOOD GROWING</h4>
+        <img src="public\images\pic80.jpg" alt="An image of a sea shore" style="float:top" width="100%" />
+    <p>The management committee is composed of diffrent magagers and heads of departments at different levels. The heads of these committees report directly to the executive director. The management committee is in charge of the daily activities of the organization
+       at different levels.</p>
+    <h4>FUNDRAISING PROGRAM</h4>
+    <img src="public\images\pic83.jpg" alt="An image of a sea shore" style="float:top" width="100%" />
+  </ul>
+  </div>
+</div>
+<h4 style="font-size: 20px"> <i>OUR ADDRESS</i></h4>
+    </main>
+    <hr class="bottom-line"> 
+     <footer>
+        <p> Child Smile Foundation (CSF) REG.N0.WCBO/32/2712 N0.3212 Physical Address Lweza A LC1.  P.O.Box: 23176 Kampala, Uganda East Africa Tel +256 701 910352 /+256 783 129168  Email: childsmileug@gmail.com
+            <br>© Copyright Child Smile Foundation 2024 | All rights Reserved
+        </p>
+        <p><a href="https://www.childsmilefoundation.org/">Visit our website</a></p>
+        
+    </footer>
+  
+</body>
+</html>
