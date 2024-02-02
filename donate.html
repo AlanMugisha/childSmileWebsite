@@ -7,6 +7,120 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles.css">
         <style>
+            * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #000080;
+    font-family: Open Sans, Arial, Helvetica, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    font-size: 18px;
+}
+
+/* Style the header */
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  background-color: #0000ff;
+  padding: 20px;
+  color: #ffffff;
+}
+
+.main_logo{
+    object-fit: contain;
+    max-inline-size: 8rem;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #800080;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #000080;
+  color: yellowgreen;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+  width: 25%;
+}
+
+/* Middle column */
+.column.middle {
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+
+ h2, h3, h4, b {
+  font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700;
+    background-color: #800080;
+    background: #800080;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 5px 5px 5px 10px;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    text-align: left;
+}
+
+p {
+    text-align: justify;
+    font-size: 20px;
+    color: white;
+    padding: 2px 2px 2px 2px;
+}
+a {
+  color: #008cba;
+}
+
+li {
+    color: white;
+    font-size: 25px;
+}
+figcaption {
+    color: aqua;
+}
             a{
                 text-decoration: none;
                 color: white;
@@ -31,6 +145,7 @@
                 font-size: 27px;
                 font-weight: 700;
             }
+            
 
             p.one {
                 border-style: solid;
@@ -61,33 +176,25 @@
     <title>CHILD SMILE FOUNDATION</title>
     </head>
 <body>
-    <header>
-        <div id="top-header">
-    
-            <!--Logo-->
-            <div id="logo">
-                <img src="public\images\pic22.png" />
-            </div>
-    <nav>
-        <h1>WELCOME TO CHILD SMILE FOUNDATION</h1>
-        <h2>Donate</h2>
-        <p style="float: center">
-            <a href="/index.html">Home </a> |
-            <a href="/about.html">About Us </a> |
-            <a href="/project.html">Projects </a> |
-            <a href="/events.html">Events </a> |
-            <a href="/get involved.html">Get Involved</a> |
-            <a href="/gallery.html">Gallery</a> |
-            <a href="/contact-us.html">Contact Us </a> |
-            <a href="/donate.html">Donate</a> |
-            
-        </p>
-    </nav>
-</header>
+    <div class="header">
+        <h1> CHILD SMILE FOUNDATION (CSF)</h1>
+        <img class="main_logo" src="public/images/pic94.jpg" alt="childsmilefoundation logo">
+    </div>
+    <div class="topnav">
+        <a id="a" href="index.html">Home</a>
+                  <a id="a" href="about.html"><span id="donate">About Us</span></a>
+                  <a id="a" href="project.html">Projects</a>
+                  <a id="a" href="events.html"><span id="donate">Events</span> </a> 
+                  <a id="a" href="get involved.html">Get Involved </a> 
+                  <a id="a" href="gallery.html"><span id="donate">Gallery</span> </a>
+                  <a id="a" href="contact-us.html">Contact Us</a>
+                  <a id="a" href="donate.html"><span id="donate">Donate</span></a>
+      
+      </div>
+      <h1 style="text-align: center;">DONATE</h1>
 <br />
 <hr />
 <main></main>
-    <h1 align="left">CHILD SMILE FOUNDATION </h1>
     <head>
         <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
               <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,700italic,400italic' rel='stylesheet' type='text/css'>

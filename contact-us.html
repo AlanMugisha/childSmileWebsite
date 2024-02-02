@@ -36,6 +36,23 @@
                 font-size: 18px;
             }
 
+            .header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  background-color: #0000ff;
+  padding: 20px;
+  color: #ffffff;
+}
+
+.main_logo{
+    object-fit: contain;
+    max-inline-size: 8rem;
+}
+
+
             hr {
             height: 3px;
             background-color: blueviolet;
@@ -55,10 +72,6 @@
                 border-radius: 20px;
             }
 
-            img{
-              border: 5px solid black;
-              border-radius: 8px;
-            }
             p {
                 text-align: justify;
                 font-size: 20px;
@@ -78,36 +91,26 @@
     <title>CHILD SMILE FOUNDATION</title>
 </head>
 <body>
-  <div>
-
-  </div>
-  <header>
-      <div id="top-header">
-  
-          <!--Logo-->
-          <div id="logo">
-              <img src="public\images\pic22.png" loading="lazy" />
-          </div>
-
-    <h1>WELCOME TO CHILD SMILE FOUNDATION</h1>
-        <h1>Contact Us</h1>
-        <p style="float: center">
-            <a href="/index.html">Home </a> |
-            <a href="/about.html">About Us </a> |
-            <a href="/project.html">Projects </a> |
-            <a href="/events.html">Events </a> |
-            <a href="/get involved.html">Get Involved</a> |
-            <a href="/gallery.html">Gallery</a> |
-            <a href="/contact-us.html">Contact Us </a> |
-            <a href="/donate.html">Donate</a> |
-            
-        </p>
-    </nav>
+  <div class="header">
+    <h1> CHILD SMILE FOUNDATION (CSF)</h1>
+    <img class="main_logo" src="public/images/pic94.jpg" alt="childsmilefoundation logo">
+</div>
+        <h1  style="text-align: center;">Contact Us</h1>
+        <div class="topnav">
+          <a id="a" href="index.html">Home</a>
+                    <a id="a" href="about.html"><span id="donate">About Us</span></a>
+                    <a id="a" href="project.html">Projects</a>
+                    <a id="a" href="events.html"><span id="donate">Events</span> </a> 
+                    <a id="a" href="get involved.html">Get Involved </a> 
+                    <a id="a" href="gallery.html"><span id="donate">Gallery</span> </a>
+                    <a id="a" href="contact-us.html">Contact Us</a>
+                    <a id="a" href="donate.html"><span id="donate">Donate</span></a>
+        
+        </div>
 </header>
 <br />
 <main>
   <hr>
-    <h1 align="left">CHILD SMILE FOUNDATION </h1><div class="container">
       <form action="https://formsubmit.co/5bd55086bca0d1115285819bed3129f2" method="POST">
     
         <label for="fname">First Name</label>

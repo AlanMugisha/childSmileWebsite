@@ -21,10 +21,19 @@ body {
 
 /* Style the header */
 .header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
   background-color: #0000ff;
   padding: 20px;
-  text-align: center;
   color: #ffffff;
+}
+
+.main_logo{
+    object-fit: contain;
+    max-inline-size: 8rem;
 }
 
 /* Style the top navigation bar */
@@ -114,8 +123,9 @@ figcaption {
 </head>
 <body>
 
-<div class="header">
-  <h1>CHILD SMILE FOUNDATION(CSF)</h1>
+  <div class="header">
+    <h1> CHILD SMILE FOUNDATION (CSF)</h1>
+    <img class="main_logo" src="public/images/pic94.jpg" alt="childsmilefoundation logo">
 </div>
 <h2>GET INVOLVED</h2>
 
